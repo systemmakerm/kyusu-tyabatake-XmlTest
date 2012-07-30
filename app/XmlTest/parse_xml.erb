@@ -1,0 +1,28 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>XML解析表示</h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      XML機能トップへ
+    </a>
+  </div>
+
+  <div data-role="content">
+    <p>
+      ローカルに保存されている、XMLファイルを解析して表示しています。
+    </p>
+    <ul data-role="listview">
+      <li>
+        <div class="itemLabel">ファイル内容</div>
+        <div class="itemValue"><%= h @file %></div>
+      </li>
+      <li>
+        <div class="itemLabel">解析内容(projects/title)</div>
+        <div class="itemValue">
+          <%= @xml.elements["/projects/title"].get_text %>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

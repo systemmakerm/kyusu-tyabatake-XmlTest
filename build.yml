@@ -1,0 +1,23 @@
+sdkversion: 3.3.3
+name: XmlTest
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.1
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.xmltest
+  BundleURLScheme: xmltest
+wp:
+  productid: '612df690-bc47-012f-2a53-1040f37b2b30'
+symbian:
+  uid: '0xed55500b'
+android:
+  version: 2.3.3
+
+extensions: ["json", "another-extension", "rhoxml"]
